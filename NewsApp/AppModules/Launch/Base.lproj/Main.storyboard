@@ -15,24 +15,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2A-3L-fLf">
-                                <rect key="frame" x="20" y="194" width="275.5" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2A-3L-fLf">
+                                <rect key="frame" x="20" y="94" width="269.5" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="yke-9Q-QnG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="NotoNastaliqUrdu-Bold" family="Noto Nastaliq Urdu" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" id="WQX-yV-Qus">
+                                <rect key="frame" x="20" y="384" width="382" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <viewLayoutGuide key="safeArea" id="Jhe-Mb-3lI"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2c-3f-e4e">
+                                <rect key="frame" x="284" y="732" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Aka-ez-Ro2"/>
+                                    <constraint firstAttribute="width" constant="80" id="Qcf-5g-jho"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                                <state key="normal" title="❯">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a24-HW-iFJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2c-3f-e4e" secondAttribute="bottom" constant="50" id="Q9p-cc-3xE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B2c-3f-e4e" secondAttribute="trailing" constant="50" id="Yas-vL-kCt"/>
                             <constraint firstItem="T2A-3L-fLf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b49-O3-zGD"/>
-                            <constraint firstItem="T2A-3L-fLf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="tQ7-Gw-I3A"/>
+                            <constraint firstItem="WQX-yV-Qus" firstAttribute="top" secondItem="T2A-3L-fLf" secondAttribute="bottom" constant="40" id="bAm-Eg-QLe"/>
+                            <constraint firstItem="T2A-3L-fLf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="tQ7-Gw-I3A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="countryView" destination="WQX-yV-Qus" id="2yc-G2-htU"/>
+                        <outlet property="nextButton" destination="B2c-3f-e4e" id="bIx-aC-AQd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="110"/>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
     </scenes>
 </document>

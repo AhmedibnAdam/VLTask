@@ -20,9 +20,14 @@ class HeadlinesViewController: UIViewController {
 	var interactor: IHeadlinesInteractor?
 	var router: IHeadlinesRouter?
 
-	override func viewDidLoad() {
+    @IBOutlet weak var tableView: UITableView!
+    override func viewDidLoad() {
         super.viewDidLoad()
-		// do someting...
+        setUpUI()
+        setUpNavigation()
+        registerTableCell()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 }
 
@@ -31,9 +36,30 @@ extension HeadlinesViewController: IHeadlinesViewController {
 }
 
 extension HeadlinesViewController {
-	// do someting...
-}
+    func setUpUI(){
+          setUpNavigation()
+          registerTableCell()
+      }
+      func setUpNavigation(){
+          navigationItem.title = "Headlines"
+          navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+          navigationController?.navigationBar.barTintColor = .black
+      }
+      func registerTableCell() {
+          let cell = UINib(nibName: "ArticlesTableViewCell", bundle: nil)
+          tableView.register(cell, forCellReuseIdentifier: "ArticlesTableViewCell")
+      }}
 
-extension HeadlinesViewController {
+extension HeadlinesViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticlesTableViewCell", for: indexPath) as! ArticlesTableViewCell
+        
+        return cell
+    }
+    
 	// do someting...
 }

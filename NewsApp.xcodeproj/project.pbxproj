@@ -31,6 +31,10 @@
 		0246B7B326C2D85C00918037 /* FavoritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246B7AB26C2D85C00918037 /* FavoritesInteractor.swift */; };
 		0246B7B426C2D85C00918037 /* FavoritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246B7AC26C2D85C00918037 /* FavoritesModel.swift */; };
 		0246B7B526C2D85C00918037 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0246B7AD26C2D85C00918037 /* FavoritesViewController.xib */; };
+		0246B7C626C3565B00918037 /* CatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246B7C426C3565B00918037 /* CatsTableViewCell.swift */; };
+		0246B7C726C3565B00918037 /* CatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0246B7C526C3565B00918037 /* CatsTableViewCell.xib */; };
+		0246B7CA26C367EC00918037 /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246B7C826C367EC00918037 /* ArticlesTableViewCell.swift */; };
+		0246B7CB26C367EC00918037 /* ArticlesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0246B7C926C367EC00918037 /* ArticlesTableViewCell.xib */; };
 		0251D99926C179F600DD95CA /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99826C179F600DD95CA /* AppRoute.swift */; };
 		0251D99B26C17A0A00DD95CA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99A26C17A0A00DD95CA /* NetworkService.swift */; };
 		0251D99D26C17A2A00DD95CA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99C26C17A2A00DD95CA /* Route.swift */; };
@@ -72,6 +76,10 @@
 		0246B7AB26C2D85C00918037 /* FavoritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesInteractor.swift; sourceTree = "<group>"; };
 		0246B7AC26C2D85C00918037 /* FavoritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModel.swift; sourceTree = "<group>"; };
 		0246B7AD26C2D85C00918037 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		0246B7C426C3565B00918037 /* CatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsTableViewCell.swift; sourceTree = "<group>"; };
+		0246B7C526C3565B00918037 /* CatsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatsTableViewCell.xib; sourceTree = "<group>"; };
+		0246B7C826C367EC00918037 /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
+		0246B7C926C367EC00918037 /* ArticlesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesTableViewCell.xib; sourceTree = "<group>"; };
 		0251D99826C179F600DD95CA /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		0251D99A26C17A0A00DD95CA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0251D99C26C17A2A00DD95CA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
@@ -166,6 +174,8 @@
 			children = (
 				0246B77E26C2D4C300918037 /* CategoriesViewController.swift */,
 				0246B78126C2D4C300918037 /* CategoriesViewController.xib */,
+				0246B7C426C3565B00918037 /* CatsTableViewCell.swift */,
+				0246B7C526C3565B00918037 /* CatsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +326,8 @@
 			children = (
 				0246B79C26C2D82200918037 /* HeadlinesViewController.xib */,
 				0246B79926C2D82200918037 /* HeadlinesViewController.swift */,
+				0246B7C826C367EC00918037 /* ArticlesTableViewCell.swift */,
+				0246B7C926C367EC00918037 /* ArticlesTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -511,6 +523,8 @@
 				02E89D9726C161E000A2143F /* LaunchScreen.storyboard in Resources */,
 				0246B7A426C2D82200918037 /* HeadlinesViewController.xib in Resources */,
 				02E89D9426C161E000A2143F /* Assets.xcassets in Resources */,
+				0246B7C726C3565B00918037 /* CatsTableViewCell.xib in Resources */,
+				0246B7CB26C367EC00918037 /* ArticlesTableViewCell.xib in Resources */,
 				0246B78926C2D4C300918037 /* CategoriesViewController.xib in Resources */,
 				0246B7B526C2D85C00918037 /* FavoritesViewController.xib in Resources */,
 				02E89D9226C161DE00A2143F /* Main.storyboard in Resources */,
@@ -566,6 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0246B7C626C3565B00918037 /* CatsTableViewCell.swift in Sources */,
 				0246B7B326C2D85C00918037 /* FavoritesInteractor.swift in Sources */,
 				0251D9A426C2C8AB00DD95CA /* Reachability.swift in Sources */,
 				0246B7B026C2D85C00918037 /* FavoritesWorker.swift in Sources */,
@@ -575,6 +590,7 @@
 				0246B7A126C2D82200918037 /* HeadlinesViewController.swift in Sources */,
 				0251D9A826C2C91C00DD95CA /* RealmManager.swift in Sources */,
 				0246B79F26C2D82200918037 /* HeadlinesWorker.swift in Sources */,
+				0246B7CA26C367EC00918037 /* ArticlesTableViewCell.swift in Sources */,
 				0246B7B126C2D85C00918037 /* FavoritesRouter.swift in Sources */,
 				0246B7A326C2D82200918037 /* HeadlinesModel.swift in Sources */,
 				0246B78526C2D4C300918037 /* CategoriesRouter.swift in Sources */,

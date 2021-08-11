@@ -22,22 +22,21 @@ enum Route: IRouter {
      case sample(parameter: [String: Any])
      
      you can use: String, Int, [String: Any], etc..
-    */
+     */
+    case cats
+    case headlines
 }
 
 extension Route {
     var module: UIViewController? {
-        /*
-         Setup module with parameters like:
-         
-         switch self {
-         case .sample:
-            return SampleConfiguration.setup()
-        case .sample(let parameters):
-            return SampleConfiguration.setup(parameters: parameters)
-         }
-         
-         */
-        return nil
+        
+        switch self {
+        case .cats:
+            return CategoriesConfiguration.setup()
+        case .headlines:
+            return HeadlinesConfiguration.setup()
+        }
+        
+        
     }
 }

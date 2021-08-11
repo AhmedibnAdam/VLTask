@@ -13,7 +13,7 @@
 import UIKit
 
 protocol ICategoriesRouter: class {
-	// do someting...
+	func navigateToHeadlines()
 }
 
 class CategoriesRouter: ICategoriesRouter {	
@@ -22,4 +22,8 @@ class CategoriesRouter: ICategoriesRouter {
 	init(view: CategoriesViewController?) {
 		self.view = view
 	}
+    func navigateToHeadlines(){
+        view?.navigate(type: .modal, module: Route.headlines, completion: nil)
+    }
+
 }
