@@ -152,7 +152,6 @@
 		0246B78C26C2D4E900918037 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0248138026C431D70089318E /* images */,
 				02E89D9326C161E000A2143F /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -480,6 +479,7 @@
 				0251D9A126C2C86D00DD95CA /* Shared */,
 				0251D99E26C2C81400DD95CA /* Conf */,
 				0246B78B26C2D4CE00918037 /* AppModules */,
+				0248138026C431D70089318E /* images */,
 				0246B78C26C2D4E900918037 /* Assets */,
 			);
 			path = NewsApp;
