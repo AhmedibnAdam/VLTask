@@ -32,8 +32,9 @@ class HeadlinesViewController: UIViewController {
     
     
     var filteredData: [HeadlinesModel.Article]!
-
-
+    var favoritesArticles = [HeadlinesModel.Article]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
@@ -50,7 +51,7 @@ extension HeadlinesViewController: IHeadlinesViewController {
         filteredData = headlinesData
         tableView.show()
         tableView.reloadData()
-
+        
     }
     
 }
@@ -67,7 +68,7 @@ extension HeadlinesViewController {
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
-
+        
     }
     
     func setUpNavigation(){
@@ -94,15 +95,35 @@ extension HeadlinesViewController: UITableViewDelegate, UITableViewDataSource {
         cell.shortDetails.text = article?.content
         let url = URL(string: article?.urlToImage ?? "" )
         cell.img.kf.setImage(with: url)
+        cell.favoriteArticle.tag = indexPath.row
+        cell.favoriteArticle.addTarget(self, action: #selector(handleAction), for: .touchUpInside)
         return cell
     }
     
+    @objc func handleAction(sender: UIButton){
+        if !sender.isSelected {
+            favoritesArticles.append(filteredData[sender.tag])
+            sender.setImage(UIImage(named: "heart"), for: .normal)
+        }
+        else {
+             sender.setImage(UIImage(named: "grayHeart"), for: .normal)
+            let article = filteredData[sender.tag]
+            favoritesArticles.removeAll()
+            for r in favoritesArticles {
+                if !(r.title == article.title) {
+                    favoritesArticles.append(r)
+                }
+            }
+        }
+        sender.isSelected = !sender.isSelected
+
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let article = filteredData?[indexPath.row]
         if let checkURL = URL(string: article?.url ?? "") {
             UIApplication.shared.open(checkURL,  completionHandler: nil)
-
+            
         } else {
             print("Invalid URL")
         }

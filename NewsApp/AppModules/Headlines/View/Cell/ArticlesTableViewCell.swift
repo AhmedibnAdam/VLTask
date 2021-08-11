@@ -15,6 +15,7 @@ class ArticlesTableViewCell: UITableViewCell {
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var source: UILabel!
     @IBOutlet weak var shortDetails: UILabel!
+    @IBOutlet weak var favoriteArticle: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
