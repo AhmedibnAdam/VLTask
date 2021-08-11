@@ -14,15 +14,6 @@ import Foundation
 import UIKit
 
 enum Route: IRouter {
-    /*
-     If you want passing with parameters
-     you just add like this:
-     
-     case sample
-     case sample(parameter: [String: Any])
-     
-     you can use: String, Int, [String: Any], etc..
-     */
     case cats
     case headlines
 }

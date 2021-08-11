@@ -107,6 +107,8 @@ extension HeadlinesViewController: UITableViewDelegate, UITableViewDataSource {
             print("Invalid URL")
         }
     }
+    
+    
 }
 
 extension HeadlinesViewController : UISearchBarDelegate {

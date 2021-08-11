@@ -37,6 +37,10 @@
 		0246B7CB26C367EC00918037 /* ArticlesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0246B7C926C367EC00918037 /* ArticlesTableViewCell.xib */; };
 		0246B7CD26C3FE7200918037 /* EndPointEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246B7CC26C3FE7200918037 /* EndPointEndpoint.swift */; };
 		0248137F26C428CA0089318E /* ViewControllerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0248137E26C428CA0089318E /* ViewControllerEx.swift */; };
+		0248138526C4320C0089318E /* Screen Shot 2021-08-11 at 6.14.46 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0248138126C4320C0089318E /* Screen Shot 2021-08-11 at 6.14.46 PM.png */; };
+		0248138626C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.05 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0248138226C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.05 PM.png */; };
+		0248138726C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.18 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0248138326C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.18 PM.png */; };
+		0248138826C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.26 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0248138426C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.26 PM.png */; };
 		0251D99926C179F600DD95CA /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99826C179F600DD95CA /* AppRoute.swift */; };
 		0251D99B26C17A0A00DD95CA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99A26C17A0A00DD95CA /* NetworkService.swift */; };
 		0251D99D26C17A2A00DD95CA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99C26C17A2A00DD95CA /* Route.swift */; };
@@ -84,6 +88,10 @@
 		0246B7C926C367EC00918037 /* ArticlesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesTableViewCell.xib; sourceTree = "<group>"; };
 		0246B7CC26C3FE7200918037 /* EndPointEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointEndpoint.swift; sourceTree = "<group>"; };
 		0248137E26C428CA0089318E /* ViewControllerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEx.swift; sourceTree = "<group>"; };
+		0248138126C4320C0089318E /* Screen Shot 2021-08-11 at 6.14.46 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2021-08-11 at 6.14.46 PM.png"; sourceTree = "<group>"; };
+		0248138226C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.05 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2021-08-11 at 6.25.05 PM.png"; sourceTree = "<group>"; };
+		0248138326C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.18 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2021-08-11 at 6.25.18 PM.png"; sourceTree = "<group>"; };
+		0248138426C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.26 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2021-08-11 at 6.25.26 PM.png"; sourceTree = "<group>"; };
 		0251D99826C179F600DD95CA /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		0251D99A26C17A0A00DD95CA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0251D99C26C17A2A00DD95CA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 		0246B78C26C2D4E900918037 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				0248138026C431D70089318E /* images */,
 				02E89D9326C161E000A2143F /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -369,6 +378,17 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		0248138026C431D70089318E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0248138126C4320C0089318E /* Screen Shot 2021-08-11 at 6.14.46 PM.png */,
+				0248138226C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.05 PM.png */,
+				0248138326C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.18 PM.png */,
+				0248138426C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.26 PM.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		0251D99E26C2C81400DD95CA /* Conf */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,13 +562,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0248138726C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.18 PM.png in Resources */,
 				02E89D9726C161E000A2143F /* LaunchScreen.storyboard in Resources */,
 				0246B7A426C2D82200918037 /* HeadlinesViewController.xib in Resources */,
 				02E89D9426C161E000A2143F /* Assets.xcassets in Resources */,
 				0246B7C726C3565B00918037 /* CatsTableViewCell.xib in Resources */,
+				0248138826C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.26 PM.png in Resources */,
 				0246B7CB26C367EC00918037 /* ArticlesTableViewCell.xib in Resources */,
 				0246B78926C2D4C300918037 /* CategoriesViewController.xib in Resources */,
+				0248138626C4320C0089318E /* Screen Shot 2021-08-11 at 6.25.05 PM.png in Resources */,
 				0246B7B526C2D85C00918037 /* FavoritesViewController.xib in Resources */,
+				0248138526C4320C0089318E /* Screen Shot 2021-08-11 at 6.14.46 PM.png in Resources */,
 				02E89D9226C161DE00A2143F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
