@@ -211,10 +211,14 @@ using OHHTTPStubs to stub your network requests
 
 
 # Some App Screenshots 
-
+##
 ![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/NewsApp/images/Screen%20Shot%202021-08-11%20at%206.24.37%20PM.png?raw=true)
+##
 ![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/NewsApp/images/Screen%20Shot%202021-08-11%20at%206.25.05%20PM.png?raw=true)
-![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Screen%20Shot%202021-08-11%20at%206.14.46%20PM.png?raw=true)
+##
 ![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/NewsApp/images/Screen%20Shot%202021-08-11%20at%206.33.40%20PM.png?raw=true)
+##
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Screen%20Shot%202021-08-11%20at%206.14.46%20PM.png?raw=true)
+
 
 
