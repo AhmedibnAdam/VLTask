@@ -14,6 +14,7 @@ import UIKit
 
 protocol IHeadlinesInteractor: class {
 	var parameters: [String: Any]? { get set }
+    func getHeadlines()
 }
 
 class HeadlinesInteractor: IHeadlinesInteractor {
@@ -24,5 +25,19 @@ class HeadlinesInteractor: IHeadlinesInteractor {
     init(presenter: IHeadlinesPresenter, Worker: IHeadlinesWorker) {
     	self.presenter = presenter
     	self.Worker = Worker
+    }
+    
+    func getHeadlines(){
+        if Reachability.isConnectedToNetwork(){
+            Worker?.getHeadlines(complition: { (error, success, headlines) in
+                if success {
+                    guard let headlines = headlines else {
+                        return
+                    }
+                    self.presenter?.showHeadlines(headlines: headlines)
+                }
+                
+            })
+        }
     }
 }

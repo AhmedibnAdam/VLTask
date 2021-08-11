@@ -35,6 +35,8 @@
 		0246B7C726C3565B00918037 /* CatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0246B7C526C3565B00918037 /* CatsTableViewCell.xib */; };
 		0246B7CA26C367EC00918037 /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246B7C826C367EC00918037 /* ArticlesTableViewCell.swift */; };
 		0246B7CB26C367EC00918037 /* ArticlesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0246B7C926C367EC00918037 /* ArticlesTableViewCell.xib */; };
+		0246B7CD26C3FE7200918037 /* EndPointEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246B7CC26C3FE7200918037 /* EndPointEndpoint.swift */; };
+		0248137F26C428CA0089318E /* ViewControllerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0248137E26C428CA0089318E /* ViewControllerEx.swift */; };
 		0251D99926C179F600DD95CA /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99826C179F600DD95CA /* AppRoute.swift */; };
 		0251D99B26C17A0A00DD95CA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99A26C17A0A00DD95CA /* NetworkService.swift */; };
 		0251D99D26C17A2A00DD95CA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99C26C17A2A00DD95CA /* Route.swift */; };
@@ -80,6 +82,8 @@
 		0246B7C526C3565B00918037 /* CatsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatsTableViewCell.xib; sourceTree = "<group>"; };
 		0246B7C826C367EC00918037 /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
 		0246B7C926C367EC00918037 /* ArticlesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesTableViewCell.xib; sourceTree = "<group>"; };
+		0246B7CC26C3FE7200918037 /* EndPointEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointEndpoint.swift; sourceTree = "<group>"; };
+		0248137E26C428CA0089318E /* ViewControllerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEx.swift; sourceTree = "<group>"; };
 		0251D99826C179F600DD95CA /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		0251D99A26C17A0A00DD95CA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0251D99C26C17A2A00DD95CA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 				0246B7C126C2D91200918037 /* View */,
 				0246B7C226C2D92600918037 /* Interactor */,
 				0246B7C326C2D92E00918037 /* Model */,
+				0246B7CE26C3FE7700918037 /* Endpoint */,
 			);
 			path = Headlines;
 			sourceTree = "<group>";
@@ -326,8 +331,7 @@
 			children = (
 				0246B79C26C2D82200918037 /* HeadlinesViewController.xib */,
 				0246B79926C2D82200918037 /* HeadlinesViewController.swift */,
-				0246B7C826C367EC00918037 /* ArticlesTableViewCell.swift */,
-				0246B7C926C367EC00918037 /* ArticlesTableViewCell.xib */,
+				0248137D26C4277E0089318E /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -346,6 +350,23 @@
 				0246B79B26C2D82200918037 /* HeadlinesModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0246B7CE26C3FE7700918037 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				0246B7CC26C3FE7200918037 /* EndPointEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		0248137D26C4277E0089318E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0246B7C826C367EC00918037 /* ArticlesTableViewCell.swift */,
+				0246B7C926C367EC00918037 /* ArticlesTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		0251D99E26C2C81400DD95CA /* Conf */ = {
@@ -399,6 +420,7 @@
 			children = (
 				0251D9AA26C2CA0600DD95CA /* Const.swift */,
 				0251D9AC26C2CA8700DD95CA /* TableView.swift */,
+				0248137E26C428CA0089318E /* ViewControllerEx.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -591,6 +613,7 @@
 				0251D9A826C2C91C00DD95CA /* RealmManager.swift in Sources */,
 				0246B79F26C2D82200918037 /* HeadlinesWorker.swift in Sources */,
 				0246B7CA26C367EC00918037 /* ArticlesTableViewCell.swift in Sources */,
+				0246B7CD26C3FE7200918037 /* EndPointEndpoint.swift in Sources */,
 				0246B7B126C2D85C00918037 /* FavoritesRouter.swift in Sources */,
 				0246B7A326C2D82200918037 /* HeadlinesModel.swift in Sources */,
 				0246B78526C2D4C300918037 /* CategoriesRouter.swift in Sources */,
@@ -604,6 +627,7 @@
 				0246B79D26C2D82200918037 /* HeadlinesConfiguration.swift in Sources */,
 				0246B78726C2D4C300918037 /* CategoriesInteractor.swift in Sources */,
 				0246B7A026C2D82200918037 /* HeadlinesRouter.swift in Sources */,
+				0248137F26C428CA0089318E /* ViewControllerEx.swift in Sources */,
 				0246B7B426C2D85C00918037 /* FavoritesModel.swift in Sources */,
 				0251D99926C179F600DD95CA /* AppRoute.swift in Sources */,
 				0246B79E26C2D82200918037 /* HeadlinesPresenter.swift in Sources */,

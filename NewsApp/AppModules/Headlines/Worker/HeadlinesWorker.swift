@@ -14,9 +14,27 @@
 import Foundation
 
 protocol IHeadlinesWorker: class {
-	// do someting...
-}
+   func getHeadlines(complition :  @escaping (_ error:Error? ,_ success: Bool,_ data: HeadlinesModel.Response?)->Void)}
 
 class HeadlinesWorker: IHeadlinesWorker {
-	// do someting...
+    func getHeadlines(complition: @escaping (Error?, Bool, HeadlinesModel.Response?) -> Void) {
+        NetworkService.share.request(endpoint: EndPointEndpoint.headlines, success: { (responseData) in
+                   let response = responseData
+                   do {
+                       let decoder = JSONDecoder()
+                    let data = try decoder.decode(HeadlinesModel.Response.self, from: response)
+                       print(data)
+                       complition(nil, true, data)
+                       
+                   } catch let error {
+                       print(error)
+                       complition(nil, true, nil)
+                   }
+                   
+               }) { (error) in
+                   print(error as Any)
+                    complition(nil, true, nil)
+               }
+    }
+    
 }

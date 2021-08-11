@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.9.1)
   - CountryPickerSwift (1.8.2)
+  - Kingfisher (6.3.1)
   - OHHTTPStubs/Core (9.1.0)
   - OHHTTPStubs/Default (9.1.0):
     - OHHTTPStubs/Core
@@ -19,6 +20,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.9.1)
   - CountryPickerSwift
+  - Kingfisher
   - OHHTTPStubs/Swift
   - SwiftyJSON
 
@@ -26,15 +28,17 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - CountryPickerSwift
+    - Kingfisher
     - OHHTTPStubs
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   CountryPickerSwift: b2cd8b391a0222bd9a97d09ea30426303adac810
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 765c1dd7b5e98afee9d9ad92a123fe090829c269
+PODFILE CHECKSUM: 407576600d353f614de9570a24ee697e6f52022a
 
 COCOAPODS: 1.10.2

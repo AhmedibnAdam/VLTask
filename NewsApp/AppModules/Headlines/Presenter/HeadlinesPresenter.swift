@@ -13,7 +13,7 @@
 import UIKit
 
 protocol IHeadlinesPresenter: class {
-	// do someting...
+    func showHeadlines(headlines: HeadlinesModel.Response)
 }
 
 class HeadlinesPresenter: IHeadlinesPresenter {	
@@ -22,4 +22,10 @@ class HeadlinesPresenter: IHeadlinesPresenter {
 	init(view: IHeadlinesViewController?) {
 		self.view = view
 	}
+    
+    func showHeadlines(headlines: HeadlinesModel.Response){
+        view?.showHeadlines(headlines: headlines)
+
+    }
+
 }

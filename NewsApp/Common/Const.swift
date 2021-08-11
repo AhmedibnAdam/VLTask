@@ -10,7 +10,7 @@ import Foundation
 
 
 class Constant {
-    static let base = "https://newsapi.org/v2/"
+    static let base = "https://newsapi.org/"
     static let version = "v2/"
     static let apiKey = "28ef4b7dfdaa454bb2f7baee985e4db3"
 }

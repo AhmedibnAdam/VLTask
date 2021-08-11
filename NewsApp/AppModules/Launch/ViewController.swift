@@ -31,7 +31,7 @@ class ViewController: UIViewController , CountryPickerDelegate{
         let code = (locale as NSLocale).object(forKey: NSLocale.Key.countryCode) as! String?
         //init Picker
         picker.countryPickerDelegate = self
-        picker.setCountry(code ?? "EG")
+        picker.setCountry(code ?? "US")
         countryView.addSubview(picker)
     }
     

@@ -19,7 +19,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2a-cK-SVr">
                         <rect key="frame" x="0.0" y="0.0" width="567" height="220"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 major US airlines will not mandate shots for their unvaccinated workers - CNN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsQ-R2-ZoO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 major US airlines will not mandate shots for their unvaccinated workers - CNN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsQ-R2-ZoO">
                                 <rect key="frame" x="10" y="10" width="547" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -38,13 +38,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CNN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GE5-Mz-fDH">
-                                <rect key="frame" x="354" y="58" width="43" height="24"/>
+                                <rect key="frame" x="514" y="53" width="43" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="U.S. stock index futures were little changed during overnight trading on Tuesday after the S&amp;P and Dow closed at record highs." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgi-hB-YJk">
-                                <rect key="frame" x="10" y="92" width="387" height="118"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="U.S. stock index futures were little changed during overnight trading on Tuesday after the S&amp;P and Dow closed at record highs." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgi-hB-YJk">
+                                <rect key="frame" x="10" y="87" width="387" height="123"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,6 +52,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GE5-Mz-fDH" secondAttribute="trailing" constant="10" id="70W-CX-hnX"/>
                             <constraint firstItem="kgi-hB-YJk" firstAttribute="top" secondItem="GE5-Mz-fDH" secondAttribute="bottom" constant="10" id="8Gn-DG-Qkr"/>
                             <constraint firstAttribute="trailing" secondItem="XsQ-R2-ZoO" secondAttribute="trailing" constant="10" id="Ge1-FH-YQb"/>
                             <constraint firstItem="8mL-Yg-Sxr" firstAttribute="leading" secondItem="kgi-hB-YJk" secondAttribute="trailing" constant="10" id="JtG-7e-e3k"/>
@@ -60,10 +61,9 @@
                             <constraint firstAttribute="bottom" secondItem="8mL-Yg-Sxr" secondAttribute="bottom" constant="10" id="QLv-1g-yhm"/>
                             <constraint firstItem="kgi-hB-YJk" firstAttribute="leading" secondItem="D2a-cK-SVr" secondAttribute="leading" constant="10" id="aLp-CR-pP2"/>
                             <constraint firstItem="kgi-hB-YJk" firstAttribute="top" secondItem="GE5-Mz-fDH" secondAttribute="bottom" constant="10" id="b8v-1r-asY"/>
-                            <constraint firstItem="GE5-Mz-fDH" firstAttribute="top" secondItem="XsQ-R2-ZoO" secondAttribute="bottom" constant="5" id="c3C-Kz-h3L"/>
+                            <constraint firstItem="GE5-Mz-fDH" firstAttribute="top" secondItem="XsQ-R2-ZoO" secondAttribute="bottom" id="c3C-Kz-h3L"/>
                             <constraint firstItem="AOy-qH-M5B" firstAttribute="leading" secondItem="XsQ-R2-ZoO" secondAttribute="leading" id="ezZ-LY-7NG"/>
                             <constraint firstItem="AOy-qH-M5B" firstAttribute="top" secondItem="XsQ-R2-ZoO" secondAttribute="bottom" constant="8" id="jKO-Od-OKJ"/>
-                            <constraint firstItem="8mL-Yg-Sxr" firstAttribute="leading" secondItem="GE5-Mz-fDH" secondAttribute="trailing" constant="10" id="pCF-Hv-PaL"/>
                             <constraint firstAttribute="height" constant="220" id="rGU-kI-Q4g"/>
                             <constraint firstItem="8mL-Yg-Sxr" firstAttribute="top" secondItem="XsQ-R2-ZoO" secondAttribute="bottom" constant="10" id="sMe-fQ-Y75"/>
                             <constraint firstAttribute="trailing" secondItem="8mL-Yg-Sxr" secondAttribute="trailing" constant="10" id="vf9-xg-el6"/>
@@ -79,6 +79,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="8mL-Yg-Sxr" id="ahd-iv-4Cb"/>
+                <outlet property="publishedAt" destination="AOy-qH-M5B" id="wmi-rQ-oPo"/>
+                <outlet property="shortDetails" destination="kgi-hB-YJk" id="ATg-aS-fj1"/>
+                <outlet property="source" destination="GE5-Mz-fDH" id="nOK-9t-cGt"/>
+                <outlet property="title" destination="XsQ-R2-ZoO" id="pzo-Ia-p1o"/>
+            </connections>
             <point key="canvasLocation" x="226.81159420289856" y="150.66964285714286"/>
         </tableViewCell>
     </objects>
