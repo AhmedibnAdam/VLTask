@@ -10,19 +10,21 @@
 * [Some App Tests ](#Some-App-tests)
 
 ## General info
-Onboarding
+
+## Onboarding
+
 1. User should choose a favorite country to follow.
 2. User should choose 3 favorite categories.
 3. Onboarding should show only on the first time the user opens the app.
-Headlines
+## Headlines
 1. User should see headlines from the selected country with the selected favorite
 categories.
 2. User should be able to search articles.
 3. Data to show: Title, Date, Image, source newspaper, short description.
 4. Headlines should be ordered by date.
 5. On tapping on a headline, Open the article on safari.
-4. User should be able to save their favorite articles to read later.
-Favorites
+6. User should be able to save their favorite articles to read later.
+## Favorites
 1. User should see headlines for the favorite list.
 2. User should be able to remove a headline from his favorite.
 3. Favorites should have the same layout, order and on tap action of headlines.
