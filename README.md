@@ -208,6 +208,13 @@ class HeadlinesPresenter: IHeadlinesPresenter {
 # Unit Test
 test functionalty of the app ( calling API ) 
 using OHHTTPStubs to stub your network requests 
+
+
+# Some App Screenshots 
+
 ![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Screen%20Shot%202021-08-11%20at%206.14.46%20PM.png)
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202021-08-11%20at%2018.15.52.png)
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202021-08-11%20at%2018.15.52.png)
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202021-08-11%20at%2018.15.46.png?raw=true)
 
 
