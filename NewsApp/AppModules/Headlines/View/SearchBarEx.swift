@@ -2,7 +2,7 @@
 //  SearchBarEx.swift
 //  NewsApp
 //
-//  Created by mo3taz on 8/13/21.
+//  Created by Adam on 8/13/21.
 //  Copyright © 2021 VL. All rights reserved.
 //
 

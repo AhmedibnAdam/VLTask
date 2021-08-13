@@ -2,7 +2,7 @@
 //  NewsAppTests.swift
 //  NewsAppTests
 //
-//  Created by mo3taz on 8/11/21.
+//  Created by Adam on 8/11/21.
 //  Copyright © 2021 VL. All rights reserved.
 //
 

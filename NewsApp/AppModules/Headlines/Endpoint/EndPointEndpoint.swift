@@ -2,7 +2,7 @@
 //  EndPointEndpoint.swift
 //  NewsApp
 //
-//  Created by mo3taz on 8/11/21.
+//  Created by Adam on 8/11/21.
 //  Copyright (c) 2021 IBN ADAM. All rights reserved.
 //  Modify By:  * Ahmed Adam
 //              * ibn.abuadam@gmail.com
