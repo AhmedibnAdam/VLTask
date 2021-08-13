@@ -14,15 +14,11 @@ import UIKit
 
 struct HeadlinesModel {	
 	struct Request {
-		// do someting...
 
 		func parameters() -> [String: Any]? {
-			// do someting...
 			return nil
 		}
 	}
-
-
 
     // MARK: - Response
     struct Response: Codable {

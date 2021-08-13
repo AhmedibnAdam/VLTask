@@ -43,7 +43,7 @@ class HeadlinesViewController: UIViewController {
     var secondFavCategory: [HeadlinesModel.Article] = []
     var thirdFavCategory: [HeadlinesModel.Article] = []
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,9 +60,9 @@ class HeadlinesViewController: UIViewController {
     @IBAction func showFavorites(_ sender: UIButton) {
         
         let unique = Array(Set(favoriteArticles))
-
+        
         router?.navigateToFavorites(parameters: ["favorites": favoriteArticles])
-
+        
     }
     
 }
@@ -117,10 +117,13 @@ extension HeadlinesViewController {
         navigationController?.navigationBar.barTintColor = .black
         
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-
+        
     }
+    
     func registerTableCell() {
         let cell = UINib(nibName: headlinesNibName, bundle: nil)
         tableView.register(cell, forCellReuseIdentifier: headlinesNibName)
-    }}
+    }
+    
+}
 

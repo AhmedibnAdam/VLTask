@@ -26,14 +26,6 @@ extension EndPointEndpoint: IEndpoint {
     }
     
     var method: HTTPMethod {
-        /*
-         Do like this:
-         
-         switch self {
-         case .sample:
-         return .get
-         }
-         */
         return .get
     }
     
