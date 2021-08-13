@@ -14,11 +14,57 @@
 import Foundation
 
 protocol IHeadlinesWorker: class {
-   func getHeadlines(complition :  @escaping (_ error:Error? ,_ success: Bool,_ data: HeadlinesModel.Response?)->Void)}
+   func getFirstFav(complition :  @escaping (_ error:Error? ,_ success: Bool,_ data: HeadlinesModel.Response?)->Void)
+    
+    func getSecondFav(complition :  @escaping (_ error:Error? ,_ success: Bool,_ data: HeadlinesModel.Response?)->Void)
+      
+    func getThirdFav(complition :  @escaping (_ error:Error? ,_ success: Bool,_ data: HeadlinesModel.Response?)->Void)
+      
+}
 
 class HeadlinesWorker: IHeadlinesWorker {
-    func getHeadlines(complition: @escaping (Error?, Bool, HeadlinesModel.Response?) -> Void) {
-        NetworkService.share.request(endpoint: EndPointEndpoint.headlines, success: { (responseData) in
+    func getFirstFav(complition: @escaping (Error?, Bool, HeadlinesModel.Response?) -> Void) {
+        NetworkService.share.request(endpoint: EndPointEndpoint.firstFav, success: { (responseData) in
+                   let response = responseData
+                   do {
+                       let decoder = JSONDecoder()
+                    let data = try decoder.decode(HeadlinesModel.Response.self, from: response)
+                       print(data)
+                       complition(nil, true, data)
+                       
+                   } catch let error {
+                       print(error)
+                       complition(nil, true, nil)
+                   }
+                   
+               }) { (error) in
+                   print(error as Any)
+                    complition(nil, true, nil)
+               }
+    }
+    
+    func getSecondFav(complition: @escaping (Error?, Bool, HeadlinesModel.Response?) -> Void) {
+        NetworkService.share.request(endpoint: EndPointEndpoint.seconfFav, success: { (responseData) in
+                   let response = responseData
+                   do {
+                       let decoder = JSONDecoder()
+                    let data = try decoder.decode(HeadlinesModel.Response.self, from: response)
+                       print(data)
+                       complition(nil, true, data)
+                       
+                   } catch let error {
+                       print(error)
+                       complition(nil, true, nil)
+                   }
+                   
+               }) { (error) in
+                   print(error as Any)
+                    complition(nil, true, nil)
+               }
+    }
+    
+    func getThirdFav(complition: @escaping (Error?, Bool, HeadlinesModel.Response?) -> Void) {
+        NetworkService.share.request(endpoint: EndPointEndpoint.thirdFav, success: { (responseData) in
                    let response = responseData
                    do {
                        let decoder = JSONDecoder()

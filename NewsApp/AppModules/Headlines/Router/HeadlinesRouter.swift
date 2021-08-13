@@ -13,13 +13,21 @@
 import UIKit
 
 protocol IHeadlinesRouter: class {
-	// do someting...
+    func navigateToFavorites(parameters: [String: Any])
 }
 
-class HeadlinesRouter: IHeadlinesRouter {	
-	weak var view: HeadlinesViewController?
-	
-	init(view: HeadlinesViewController?) {
-		self.view = view
-	}
+class HeadlinesRouter: IHeadlinesRouter {
+    
+    
+    weak var view: HeadlinesViewController?
+    
+    init(view: HeadlinesViewController?) {
+        self.view = view
+    }
+    
+    func navigateToFavorites(parameters: [String : Any]) {
+        view?.navigate(type: .modalWithNavigation, module: Route.favorites(parameters: parameters), completion: nil)
+    }
+    
+    
 }

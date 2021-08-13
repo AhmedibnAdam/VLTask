@@ -16,6 +16,7 @@ import UIKit
 enum Route: IRouter {
     case cats
     case headlines
+    case favorites(parameters: [String: Any])
 }
 
 extension Route {
@@ -26,6 +27,8 @@ extension Route {
             return CategoriesConfiguration.setup()
         case .headlines:
             return HeadlinesConfiguration.setup()
+        case .favorites(let params):
+            return FavoritesConfiguration.setup(parameters: params)
         }
         
         

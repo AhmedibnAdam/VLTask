@@ -21,3 +21,11 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+
+class MyButton: UIButton{
+
+    var myRow: Int = 0
+    var mySection: Int = 0
+
+}

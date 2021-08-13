@@ -14,7 +14,9 @@ import UIKit
 
 protocol IHeadlinesInteractor: class {
 	var parameters: [String: Any]? { get set }
-    func getHeadlines()
+    func getFirstFavorite()
+    func getSecondFavorite()
+    func getThirdFavorite()
 }
 
 class HeadlinesInteractor: IHeadlinesInteractor {
@@ -27,14 +29,40 @@ class HeadlinesInteractor: IHeadlinesInteractor {
     	self.Worker = Worker
     }
     
-    func getHeadlines(){
+    func getFirstFavorite(){
         if Reachability.isConnectedToNetwork(){
-            Worker?.getHeadlines(complition: { (error, success, headlines) in
+            Worker?.getFirstFav(complition: { (error, success, headlines) in
                 if success {
                     guard let headlines = headlines else {
                         return
                     }
-                    self.presenter?.showHeadlines(headlines: headlines)
+                    self.presenter?.showFirstFavHeadlines(headlines: headlines)
+                }
+                
+            })
+        }
+    }
+    func getSecondFavorite(){
+        if Reachability.isConnectedToNetwork(){
+            Worker?.getSecondFav(complition: { (error, success, headlines) in
+                if success {
+                    guard let headlines = headlines else {
+                        return
+                    }
+                    self.presenter?.showSecondFavHeadlines(headlines: headlines)
+                }
+                
+            })
+        }
+    }
+    func getThirdFavorite(){
+        if Reachability.isConnectedToNetwork(){
+            Worker?.getThirdFav(complition: { (error, success, headlines) in
+                if success {
+                    guard let headlines = headlines else {
+                        return
+                    }
+                    self.presenter?.showThirdFavHeadlines(headlines: headlines)
                 }
                 
             })

@@ -13,19 +13,33 @@
 import UIKit
 
 protocol IHeadlinesPresenter: class {
-    func showHeadlines(headlines: HeadlinesModel.Response)
+    func showFirstFavHeadlines(headlines: HeadlinesModel.Response)
+    func showSecondFavHeadlines(headlines: HeadlinesModel.Response)
+    func showThirdFavHeadlines(headlines: HeadlinesModel.Response)
+    
 }
 
-class HeadlinesPresenter: IHeadlinesPresenter {	
-	weak var view: IHeadlinesViewController?
-	
-	init(view: IHeadlinesViewController?) {
-		self.view = view
-	}
+class HeadlinesPresenter: IHeadlinesPresenter {
     
-    func showHeadlines(headlines: HeadlinesModel.Response){
-        view?.showHeadlines(headlines: headlines)
-
+    weak var view: IHeadlinesViewController?
+    
+    init(view: IHeadlinesViewController?) {
+        self.view = view
     }
-
+    
+    func showFirstFavHeadlines(headlines: HeadlinesModel.Response){
+        view?.showFirstFavHeadlines(headlines: headlines)
+        
+    }
+    func showSecondFavHeadlines(headlines: HeadlinesModel.Response) {
+        view?.showSecondFavHeadlines(headlines: headlines)
+        
+    }
+    
+    func showThirdFavHeadlines(headlines: HeadlinesModel.Response) {
+        view?.showThirdFavHeadlines(headlines: headlines)
+        
+    }
+    
+    
 }

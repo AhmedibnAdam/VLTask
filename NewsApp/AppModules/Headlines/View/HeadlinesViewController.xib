@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1y9-xH-QXW">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <rect key="frame" x="0.0" y="0.0" width="245" height="56"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K5X-gZ-GoK">
@@ -30,19 +30,34 @@
                         <outlet property="dataSource" destination="i5M-Pr-FkT" id="hml-YQ-mYJ"/>
                     </connections>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sU0-Pl-ncc">
+                    <rect key="frame" x="250" y="5" width="120" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="eFz-rj-DO7"/>
+                    </constraints>
+                    <state key="normal" title="show Favorites">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="showFavorites:" destination="-1" eventType="touchUpInside" id="Adu-d9-8Qa"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="K5X-gZ-GoK" secondAttribute="bottom" id="54U-K5-2fR"/>
                 <constraint firstItem="K5X-gZ-GoK" firstAttribute="top" secondItem="1y9-xH-QXW" secondAttribute="bottom" id="D8m-JO-dei"/>
+                <constraint firstItem="sU0-Pl-ncc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="FXk-f5-un0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K5X-gZ-GoK" secondAttribute="trailing" id="LwV-E5-mms"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1y9-xH-QXW" secondAttribute="trailing" id="WrA-EV-zNU"/>
+                <constraint firstItem="K5X-gZ-GoK" firstAttribute="top" secondItem="sU0-Pl-ncc" secondAttribute="bottom" constant="5" id="iNA-dM-aFJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="1y9-xH-QXW" secondAttribute="leading" id="jlc-O0-ki7"/>
                 <constraint firstItem="1y9-xH-QXW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="jo5-Et-cor"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sU0-Pl-ncc" secondAttribute="trailing" constant="5" id="qcR-PK-1xT"/>
+                <constraint firstItem="sU0-Pl-ncc" firstAttribute="leading" secondItem="1y9-xH-QXW" secondAttribute="trailing" constant="5" id="y2j-mr-u4c"/>
                 <constraint firstItem="K5X-gZ-GoK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="y9q-ab-aej"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="136.80000000000001" y="124.58770614692655"/>
+            <point key="canvasLocation" x="108" y="132.68365817091455"/>
         </view>
     </objects>
 </document>

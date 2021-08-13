@@ -24,6 +24,8 @@ class FavoritesConfiguration {
         controller.interactor = interactor
         controller.router = router
         interactor.parameters = parameters
+        
+        controller.parameters = parameters
         return controller
     }
 }
