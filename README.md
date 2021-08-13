@@ -10,19 +10,21 @@
 * [Some App Tests ](#Some-App-tests)
 
 ## General info
-Onboarding
+
+## Onboarding
+
 1. User should choose a favorite country to follow.
 2. User should choose 3 favorite categories.
 3. Onboarding should show only on the first time the user opens the app.
-Headlines
+## Headlines
 1. User should see headlines from the selected country with the selected favorite
 categories.
 2. User should be able to search articles.
 3. Data to show: Title, Date, Image, source newspaper, short description.
 4. Headlines should be ordered by date.
 5. On tapping on a headline, Open the article on safari.
-4. User should be able to save their favorite articles to read later.
-Favorites
+6. User should be able to save their favorite articles to read later.
+## Favorites
 1. User should see headlines for the favorite list.
 2. User should be able to remove a headline from his favorite.
 3. Favorites should have the same layout, order and on tap action of headlines.
@@ -211,10 +213,14 @@ using OHHTTPStubs to stub your network requests
 
 
 # Some App Screenshots 
+##
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/NewsApp/images/Screen%20Shot%202021-08-11%20at%206.24.37%20PM.png?raw=true)
+##
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/NewsApp/images/Screen%20Shot%202021-08-11%20at%206.25.05%20PM.png?raw=true)
+##
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/NewsApp/images/Screen%20Shot%202021-08-11%20at%206.33.40%20PM.png?raw=true)
+##
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Screen%20Shot%202021-08-11%20at%206.14.46%20PM.png?raw=true)
 
-![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Screen%20Shot%202021-08-11%20at%206.14.46%20PM.png)
-![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202021-08-11%20at%2018.15.52.png)
-![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202021-08-11%20at%2018.15.52.png)
-![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202021-08-11%20at%2018.15.46.png?raw=true)
 
 
