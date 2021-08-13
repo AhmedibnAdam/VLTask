@@ -42,6 +42,8 @@
 		0248138A26C433830089318E /* Screen Shot 2021-08-11 at 6.33.40 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0248138926C433830089318E /* Screen Shot 2021-08-11 at 6.33.40 PM.png */; };
 		0248138C26C433920089318E /* Screen Shot 2021-08-11 at 6.24.37 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0248138B26C433920089318E /* Screen Shot 2021-08-11 at 6.24.37 PM.png */; };
 		0248139426C440C10089318E /* NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0248139326C440C10089318E /* NewsAppTests.swift */; };
+		0248139C26C601C20089318E /* HealdlinesTableViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0248139B26C601C20089318E /* HealdlinesTableViewEx.swift */; };
+		0248139E26C601F60089318E /* SearchBarEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0248139D26C601F60089318E /* SearchBarEx.swift */; };
 		0251D99926C179F600DD95CA /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99826C179F600DD95CA /* AppRoute.swift */; };
 		0251D99B26C17A0A00DD95CA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99A26C17A0A00DD95CA /* NetworkService.swift */; };
 		0251D99D26C17A2A00DD95CA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251D99C26C17A2A00DD95CA /* Route.swift */; };
@@ -106,6 +108,8 @@
 		0248139126C440C10089318E /* NewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0248139326C440C10089318E /* NewsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppTests.swift; sourceTree = "<group>"; };
 		0248139526C440C10089318E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0248139B26C601C20089318E /* HealdlinesTableViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealdlinesTableViewEx.swift; sourceTree = "<group>"; };
+		0248139D26C601F60089318E /* SearchBarEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarEx.swift; sourceTree = "<group>"; };
 		0251D99826C179F600DD95CA /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		0251D99A26C17A0A00DD95CA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0251D99C26C17A2A00DD95CA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
@@ -360,6 +364,8 @@
 			children = (
 				0246B79C26C2D82200918037 /* HeadlinesViewController.xib */,
 				0246B79926C2D82200918037 /* HeadlinesViewController.swift */,
+				0248139B26C601C20089318E /* HealdlinesTableViewEx.swift */,
+				0248139D26C601F60089318E /* SearchBarEx.swift */,
 				0248137D26C4277E0089318E /* Cell */,
 			);
 			path = View;
@@ -711,6 +717,7 @@
 				0246B7B126C2D85C00918037 /* FavoritesRouter.swift in Sources */,
 				0246B7A326C2D82200918037 /* HeadlinesModel.swift in Sources */,
 				0246B78526C2D4C300918037 /* CategoriesRouter.swift in Sources */,
+				0248139C26C601C20089318E /* HealdlinesTableViewEx.swift in Sources */,
 				0246B78326C2D4C300918037 /* CategoriesConfiguration.swift in Sources */,
 				0251D99B26C17A0A00DD95CA /* NetworkService.swift in Sources */,
 				0246B7A226C2D82200918037 /* HeadlinesInteractor.swift in Sources */,
@@ -718,6 +725,7 @@
 				0246B78826C2D4C300918037 /* CategoriesModel.swift in Sources */,
 				0246B78426C2D4C300918037 /* CategoriesPresenter.swift in Sources */,
 				02E89D8F26C161DE00A2143F /* ViewController.swift in Sources */,
+				0248139E26C601F60089318E /* SearchBarEx.swift in Sources */,
 				0246B79D26C2D82200918037 /* HeadlinesConfiguration.swift in Sources */,
 				0246B78726C2D4C300918037 /* CategoriesInteractor.swift in Sources */,
 				0246B7A026C2D82200918037 /* HeadlinesRouter.swift in Sources */,
