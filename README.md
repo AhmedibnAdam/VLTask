@@ -220,7 +220,12 @@ using OHHTTPStubs to stub your network requests
 ##
 ![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/NewsApp/images/Screen%20Shot%202021-08-11%20at%206.33.40%20PM.png?raw=true)
 ##
-![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/Screen%20Shot%202021-08-11%20at%206.14.46%20PM.png?raw=true)
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/NewsApp/images/Screen%20Shot%202021-08-13%20at%203.28.56%20AM.png?raw=true)
+## 
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/NewsApp/images/Screen%20Shot%202021-08-13%20at%203.29.08%20AM.png?raw=true)
+##
+![alt text](https://github.com/AhmedibnAdam/VLTask/blob/master/NewsApp/images/Screen%20Shot%202021-08-13%20at%203.29.20%20AM.png?raw=true)
+
 
 
 
